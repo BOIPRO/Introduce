@@ -1,0 +1,94 @@
+.profilebox {
+    width: 300px;
+    height: 375px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+.avatar {
+    width: 125px;
+    height: 125px;
+    background-color: rgb(33, 32, 32);
+    align-self: center;
+    position: relative;
+    top: 5%;
+    border-radius: 50%;
+    background-size: cover;
+    transition: all 1s ease 0s;
+    border: 2px solid #4257FF;
+    overflow: visible;
+}
+.avatar::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    inset: -5px; /* mở rộng ra ngoài */
+    border: 10px solid #4257FF;
+    filter: blur(8px);
+    z-index: 1;
+}
+/* Animation avatar */
+
+.avatar:hover {
+    transform: scale(1.25);
+}
+
+.buttonbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+    flex: 0.85;
+}
+.btn {
+    width: 200px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    background: #71D9E3;
+    background: linear-gradient(to right, #71D9E3 0%, #4257FF 100%);
+    border: none;
+    font-weight: bold;
+}
+.facebook {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 20px;
+    transition: all 0.5s ease 0s;
+    outline: none;
+    cursor: pointer;
+    text-shadow: 0 0 5px;
+    box-shadow: 0 0 1em 0.1em #4257FF;
+}
+.facebook:hover {
+    transform: scale(1.25);
+}
+.github {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 20px;
+    padding-right: 20px;
+     transition: all 0.5s ease 0s;
+     cursor: pointer;
+     text-shadow: 0 0 5px;
+    box-shadow: 0 0 1em 0.1em #4257FF;
+}
+.github:hover {
+    transform: scale(1.25);
+}
+.youtube {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 20px;
+     transition: all 0.5s ease 0s;
+     cursor: pointer;
+     text-shadow: 0 0 5px;
+    box-shadow: 0 0 1em 0.1em #4257FF;
+}
+.youtube:hover {
+    transform: scale(1.25);
+}
