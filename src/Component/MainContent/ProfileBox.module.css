@@ -1,23 +1,25 @@
 .profilebox {
-    max-width: 1200px;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    display: grid;
+   grid-template-rows: 1fr 1fr;
+   gap: 20px;
 }
 .avatar {
-    width:6em;
-    height: 6em;
+    width: 15%;
+    aspect-ratio: 1/1;
     background-color: rgb(33, 32, 32);
+    min-width: 240px;
+    min-height: 240px;
     align-self: center;
     position: relative;
-    top: 5%;
+    top: 2%;
     border-radius: 50%;
     background-size: cover;
     transition: all 1s ease 0s;
     border: 2px solid #4257FF;
     overflow: visible;
+    margin: 0 auto;
 }
 .avatar::before {
     content: "";
@@ -35,25 +37,30 @@
 }
 
 .buttonbox {
-    height: 50vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items:center;
     flex: 0.85;
     font-size: 16px;
+    padding-bottom: 2%;
+    justify-content: space-around;
 }
 .btn {
-    width: 10em;
-    height: 3em;
+    width: 40%;
+    aspect-ratio: 4/0.8;
     background-color: black;
     color: white;
-    border-radius: 20px;
+    border-radius: 40px;
     background: #71D9E3;
     background: linear-gradient(to right, #71D9E3 0%, #4257FF 100%);
     border: none;
     font-weight: bold;
+    min-width: 240px;
+    min-height: 120px;
+    
 }
 .facebook {
     display: flex;
